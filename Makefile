@@ -1,6 +1,6 @@
 TARGET := 3DS
 
-NAME := FBI
+NAME := Luma Locale Switcher
 
 BUILD_DIR := build
 OUTPUT_DIR := output
@@ -17,22 +17,26 @@ BUILD_FLAGS := -Wno-format-truncation
 
 VERSION_PARTS := $(subst ., ,$(shell git describe --tags --abbrev=0))
 
-VERSION_MAJOR := $(word 1, $(VERSION_PARTS))
-VERSION_MINOR := $(word 2, $(VERSION_PARTS))
-VERSION_MICRO := $(word 3, $(VERSION_PARTS))
+VERSION_MAJOR := 0
+VERSION_MINOR := 0
+VERSION_MICRO := 5
 
-DESCRIPTION := Open source title manager.
-AUTHOR := Steveice10
+DESCRIPTION := Locale Switcher
+AUTHOR := Rework By OasisAkari
 
-PRODUCT_CODE := CTR-P-CFBI
-UNIQUE_ID := 0xF8001
+PRODUCT_CODE := LumaLocale
+UNIQUE_ID := 0xA0CA1
 
 ICON_FLAGS := --flags visible,ratingrequired,recordusage --cero 153 --esrb 153 --usk 153 --pegigen 153 --pegiptr 153 --pegibbfc 153 --cob 153 --grb 153 --cgsrr 153
 
-BANNER_AUDIO := meta/audio_3ds.wav
-BANNER_IMAGE := meta/banner_3ds.cgfx
-ICON := meta/icon_3ds.png
-LOGO := meta/logo_3ds.bcma.lz
+BANNER_AUDIO := meta/audio.wav
+BANNER_IMAGE := meta/banner.png
+ICON := meta/icon.png
+
+#BANNER_AUDIO := meta/audio_3ds.wav
+#BANNER_IMAGE := meta/banner_3ds.cgfx
+#ICON := meta/icon_3ds.png
+#LOGO := meta/logo_3ds.bcma.lz
 
 # INTERNAL #
 
