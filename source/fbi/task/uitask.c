@@ -258,7 +258,7 @@ void task_draw_title_info(ui_view* view, void* data, float x1, float y1, float x
                      "Selected Language: %s\n"
                      "Selected Region: %s\n"
                      "Selected Country Code: %s\n"
-                     "Selected State Code: %s\n",
+                     "Selected State Code: %s",
              info->titleId,
              regionString,
              language_to_string(info->locale->language),
