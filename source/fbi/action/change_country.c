@@ -90,11 +90,11 @@ static void country_update(ui_view* view, void* data, list_item_old** items, u32
 void action_change_country(linked_list* items, list_item* selected) {
     title_info* info = selected->data;
     Region region = region_for_title(info->titleId);
-    char* region_str = region_map((char*)region_to_string(region));
-    if (strlen(region_str) == 0){
+    if (region == RGN_NONE){
         error_display(NULL, NULL, "Please select a region first.");
         return;
     }
+    char* region_str = region_map((char*)region_to_string(region));
     CountryInfo filtered_regions[COUNTRY_COUNT] = {};
     int country_count = filterCountriesByRegion(region_str, filtered_regions);
 

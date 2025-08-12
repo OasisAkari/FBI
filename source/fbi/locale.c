@@ -213,7 +213,7 @@ Result _set_locale_for_title(u64 titleId, Locale* locale) {
             FSFILE_Write(handle, &bytes_written, 0, buffer, 6, FS_WRITE_FLUSH);
         }
         else if (s_len == 7){
-            char* buffer = (char*) calloc(11, sizeof(char)); // ex: "JPN JP\0"
+            char* buffer = (char*) calloc(11, sizeof(char)); // ex: "JPN JP JP\0"
             snprintf(buffer, 64, "%s %s %s\n",
                      region_s,
                      language_s,
@@ -222,7 +222,7 @@ Result _set_locale_for_title(u64 titleId, Locale* locale) {
             buffer[10] = '\0';
             FSFILE_Write(handle, &bytes_written, 0, buffer, 9, FS_WRITE_FLUSH);
         } else if  (s_len == 9){
-            char* buffer = (char*) calloc(14, sizeof(char)); // ex: "JPN JP\0"
+            char* buffer = (char*) calloc(14, sizeof(char)); // ex: "JPN JP JP 00\0"
             snprintf(buffer, 64, "%s %s %s %s\n",
                      region_s,
                      language_s,
