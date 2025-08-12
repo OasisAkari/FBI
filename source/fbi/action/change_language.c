@@ -27,7 +27,7 @@ static void action_set_language(language_data* data, char* name, bool populated)
         // Refresh locale info
         info->locale = locale_for_title(info->titleId);
 
-        char* template = "Language has been set to %s.";
+        char* template = "Language has been set to\n%s";
         char* message = calloc(strlen(template) +2, sizeof(char));
         snprintf(message, strlen(template) +2, template, name);
         prompt_display_notify("Set language", message, COLOR_TEXT, NULL, NULL, NULL);

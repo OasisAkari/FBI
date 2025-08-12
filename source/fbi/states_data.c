@@ -1865,7 +1865,7 @@ State cn_states[] = {
         {"13", "Jilin (13)"},
         {"14", "Liaoning (14)"},
         {"15", "Qinghai (15)"},
-        {"16", "Shanxi (16)"},
+        {"16", "Shaanxi (16)"},
         {"17", "Shandong (17)"},
         {"18", "Shanxi (18)"},
         {"19", "Sichuan (19)"},
@@ -1968,7 +1968,7 @@ StatesInfo all_states[] = {
 // 日本
         {
                 "JP",
-                31,
+                48,
                 {
                         &jp_states[0], &jp_states[1], &jp_states[2], &jp_states[3], &jp_states[4],
                         &jp_states[5], &jp_states[6], &jp_states[7], &jp_states[8], &jp_states[9],
@@ -1976,7 +1976,10 @@ StatesInfo all_states[] = {
                         &jp_states[15], &jp_states[16], &jp_states[17], &jp_states[18], &jp_states[19],
                         &jp_states[20], &jp_states[21], &jp_states[22], &jp_states[23], &jp_states[24],
                         &jp_states[25], &jp_states[26], &jp_states[27], &jp_states[28], &jp_states[29],
-                        &jp_states[30]
+                        &jp_states[30], &jp_states[31],&jp_states[32],&jp_states[33],&jp_states[34],&jp_states[35],&jp_states[36],
+                        &jp_states[37],&jp_states[38],&jp_states[39],&jp_states[40],&jp_states[41],
+                        &jp_states[42],&jp_states[43],&jp_states[44],&jp_states[45],&jp_states[46],
+                        &jp_states[47]
                 }
         },
 // 安圭拉
@@ -1999,12 +2002,12 @@ StatesInfo all_states[] = {
 // 阿根廷
         {
                 "AR",
-                20,
+                25,
                 {
                         &ar_states[0], &ar_states[1], &ar_states[2], &ar_states[3], &ar_states[4],
                                                                                                    &ar_states[5], &ar_states[6], &ar_states[7], &ar_states[8], &ar_states[9],
                         &ar_states[10], &ar_states[11], &ar_states[12], &ar_states[13], &ar_states[14],
-                        &ar_states[15], &ar_states[16], &ar_states[17], &ar_states[18], &ar_states[19]
+                        &ar_states[15], &ar_states[16], &ar_states[17], &ar_states[18], &ar_states[19],&ar_states[20],&ar_states[21],&ar_states[22],&ar_states[23],&ar_states[24]
                 }
         },
 // 阿鲁巴
@@ -2101,13 +2104,14 @@ StatesInfo all_states[] = {
 // 哥伦比亚
         {
                 "CO",
-                22,
+                34,
                 {
                         &co_states[0], &co_states[1], &co_states[2], &co_states[3], &co_states[4],
-                                                                                                   &co_states[5], &co_states[6], &co_states[7], &co_states[8], &co_states[9],
+                         &co_states[5], &co_states[6], &co_states[7], &co_states[8], &co_states[9],
                         &co_states[10], &co_states[11], &co_states[12], &co_states[13], &co_states[14],
                         &co_states[15], &co_states[16], &co_states[17], &co_states[18], &co_states[19],
-                        &co_states[20], &co_states[21]
+                        &co_states[20], &co_states[21],&co_states[22],&co_states[23],&co_states[24],&co_states[25],&co_states[26],
+                        &co_states[27], &co_states[28], &co_states[29], &co_states[30], &co_states[31], &co_states[32], &co_states[33]
                 }
         },
 // 哥斯达黎加
@@ -2727,22 +2731,24 @@ StatesInfo all_states[] = {
 // 新西兰
         {
                 "NZ",
-                18,
+                17,
                 {
                         &nz_states[0], &nz_states[1], &nz_states[2], &nz_states[3], &nz_states[4],
                                                                                                    &nz_states[5], &nz_states[6], &nz_states[7], &nz_states[8], &nz_states[9],
                         &nz_states[10], &nz_states[11], &nz_states[12], &nz_states[13], &nz_states[14],
-                        &nz_states[15], &nz_states[16], &nz_states[17]
+                        &nz_states[15], &nz_states[16]
                 }
         },
 // 挪威
         {
                 "NO",
-                15,
+                22,
                 {
                         &no_states[0], &no_states[1], &no_states[2], &no_states[3], &no_states[4],
                                                                                                    &no_states[5], &no_states[6], &no_states[7], &no_states[8], &no_states[9],
-                        &no_states[10], &no_states[11], &no_states[12], &no_states[13], &no_states[14]
+                        &no_states[10], &no_states[11], &no_states[12], &no_states[13], &no_states[14],
+                        &no_states[15],&no_states[16],&no_states[17],&no_states[18],&no_states[19],
+                        &no_states[20],&no_states[21]
                 }
         },
 // 波兰
@@ -2889,7 +2895,7 @@ StatesInfo all_states[] = {
 // 土耳其
         {
                 "TR",
-                83,
+                82,
                 {
                         &tr_states[0], &tr_states[1], &tr_states[2], &tr_states[3], &tr_states[4],
                                                                                                    &tr_states[5], &tr_states[6], &tr_states[7], &tr_states[8], &tr_states[9],
@@ -2907,7 +2913,7 @@ StatesInfo all_states[] = {
                         &tr_states[65], &tr_states[66], &tr_states[67], &tr_states[68], &tr_states[69],
                         &tr_states[70], &tr_states[71], &tr_states[72], &tr_states[73], &tr_states[74],
                         &tr_states[75], &tr_states[76], &tr_states[77], &tr_states[78], &tr_states[79],
-                        &tr_states[80], &tr_states[81], &tr_states[82]
+                        &tr_states[80], &tr_states[81]
                 }
         },
 // 英国
@@ -3057,14 +3063,13 @@ StatesInfo all_states[] = {
 // 台湾地区
         {
                 "TW",
-                26,
+                23,
                 {
                         &tw_states[0], &tw_states[1], &tw_states[2], &tw_states[3], &tw_states[4],
                                                                                                    &tw_states[5], &tw_states[6], &tw_states[7], &tw_states[8], &tw_states[9],
                         &tw_states[10], &tw_states[11], &tw_states[12], &tw_states[13], &tw_states[14],
                         &tw_states[15], &tw_states[16], &tw_states[17], &tw_states[18], &tw_states[19],
-                        &tw_states[20], &tw_states[21], &tw_states[22], &tw_states[23], &tw_states[24],
-                        &tw_states[25]
+                        &tw_states[20], &tw_states[21], &tw_states[22]
                 }
         },
 // 韩国
@@ -3100,7 +3105,7 @@ StatesInfo all_states[] = {
                 17,
                 {
                         &my_states[0], &my_states[1], &my_states[2], &my_states[3], &my_states[4],
-                                                                                                   &my_states[5], &my_states[6], &my_states[7], &my_states[8], &my_states[9],
+                        &my_states[5], &my_states[6], &my_states[7], &my_states[8], &my_states[9],
                         &my_states[10], &my_states[11], &my_states[12], &my_states[13], &my_states[14],
                         &my_states[15], &my_states[16]
                 }
@@ -3108,7 +3113,7 @@ StatesInfo all_states[] = {
 // 中国地区
         {
                 "CN",
-                33,
+                32,
                 {
                         &cn_states[0], &cn_states[1], &cn_states[2], &cn_states[3], &cn_states[4],
                                                                                                    &cn_states[5], &cn_states[6], &cn_states[7], &cn_states[8], &cn_states[9],
@@ -3116,7 +3121,7 @@ StatesInfo all_states[] = {
                         &cn_states[15], &cn_states[16], &cn_states[17], &cn_states[18], &cn_states[19],
                         &cn_states[20], &cn_states[21], &cn_states[22], &cn_states[23], &cn_states[24],
                         &cn_states[25], &cn_states[26], &cn_states[27], &cn_states[28], &cn_states[29],
-                        &cn_states[30], &cn_states[31], &cn_states[32]
+                        &cn_states[30], &cn_states[31]
                 }
         },
 // 阿联酋
@@ -3131,7 +3136,7 @@ StatesInfo all_states[] = {
 // 印度
         {
                 "IN",
-                37,
+                35,
                 {
                         &in_states[0], &in_states[1], &in_states[2], &in_states[3], &in_states[4],
                                                                                                    &in_states[5], &in_states[6], &in_states[7], &in_states[8], &in_states[9],
@@ -3139,8 +3144,7 @@ StatesInfo all_states[] = {
                         &in_states[15], &in_states[16], &in_states[17], &in_states[18], &in_states[19],
                         &in_states[20], &in_states[21], &in_states[22], &in_states[23], &in_states[24],
                         &in_states[25], &in_states[26], &in_states[27], &in_states[28], &in_states[29],
-                        &in_states[30], &in_states[31], &in_states[32], &in_states[33], &in_states[34],
-                        &in_states[35], &in_states[36]
+                        &in_states[30], &in_states[31], &in_states[32], &in_states[33], &in_states[34]
                 }
         },
 // 沙特阿拉伯

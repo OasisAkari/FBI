@@ -29,7 +29,7 @@ static void action_set_country(country_data* data, char* name, bool populated) {
 
         info->locale = locale_for_title(info->titleId);
 
-        char* template = "Country has been set to %s.";
+        char* template = "Country has been set to\n%s";
         char* message = calloc(strlen(template) + strlen(name), sizeof(char));
         snprintf(message, strlen(template) + strlen(name), template, name);
         prompt_display_notify("Set Country", message, COLOR_TEXT, NULL, NULL, NULL);

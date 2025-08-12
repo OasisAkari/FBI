@@ -28,7 +28,7 @@ static void action_set_region(region_data* data, char* name, bool populated) {
 
         info->locale = locale_for_title(info->titleId);
 
-        char* template = "Region has been set to %s.";
+        char* template = "Region has been set to\n%s";
         char* message = calloc(strlen(template) +2, sizeof(char));
         snprintf(message, strlen(template) +2, template, name);
         prompt_display_notify("Set region", message, COLOR_TEXT, NULL, NULL, NULL);
