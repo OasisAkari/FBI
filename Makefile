@@ -19,7 +19,7 @@ VERSION_PARTS := $(subst ., ,$(shell git describe --tags --abbrev=0))
 
 VERSION_MAJOR := 0
 VERSION_MINOR := 0
-VERSION_MICRO := 5
+VERSION_MICRO := 6
 
 DESCRIPTION := Locale Switcher
 AUTHOR := Rework By OasisAkari

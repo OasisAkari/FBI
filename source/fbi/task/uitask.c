@@ -241,23 +241,30 @@ void task_draw_title_info(ui_view* view, void* data, float x1, float y1, float x
 
     char infoText[512];
 
+    char* country = info->locale->country;
+    char* state = info->locale->state;
+
+    if (strlen(country) == 0){
+        country = "System Default";
+    }
+
+    if (strlen(state) == 0){
+        state = "System Default";
+    }
+
     snprintf(infoText, sizeof(infoText),
              "Title ID: %016llX\n"
-                     "Media Type: %s\n"
-                     "Version: %hu (%d.%d.%d)\n"
-                     "Product Code: %s\n"
-                     "Region: %s\n"
+                     "Based Region: %s\n"
                      "Selected Language: %s\n"
-                     "Selected Region: %s"
-                     ,
+                     "Selected Region: %s\n"
+                     "Selected Country Code: %s\n"
+                     "Selected State Code: %s\n",
              info->titleId,
-             info->mediaType == MEDIATYPE_NAND ? "NAND" : info->mediaType == MEDIATYPE_SD ? "SD" : "Game Card",
-             info->version, (info->version >> 10) & 0x3F, (info->version >> 4) & 0x3F, info->version & 0xF,
-             info->productCode,
              regionString,
-
              language_to_string(info->locale->language),
-             region_to_string(info->locale->region)
+             region_to_string(info->locale->region),
+             country,
+             state
              );
 
     float infoWidth;

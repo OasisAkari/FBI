@@ -24,6 +24,8 @@ static list_item export_secure_value = {"Export Secure Value", COLOR_TEXT, actio
 static list_item delete_secure_value = {"Delete Secure Value", COLOR_TEXT, action_delete_secure_value};
 static list_item change_region = {"Change Region", COLOR_TEXT, action_change_region};
 static list_item change_language = {"Change Language", COLOR_TEXT, action_change_language};
+static list_item change_country = {"Change Country", COLOR_TEXT, action_change_country};
+static list_item change_state = {"Change State", COLOR_TEXT, action_change_state};
 static list_item use_system_default = {"Use System Default", COLOR_TEXT, action_use_system_default};
 
 
@@ -105,7 +107,10 @@ static void titles_action_update(ui_view* view, void* data, linked_list* items, 
 //        }
         linked_list_add(items, &change_language);
         linked_list_add(items, &change_region);
+        linked_list_add(items, &change_country);
+        linked_list_add(items, &change_state);
         linked_list_add(items, &use_system_default);
+
     }
 }
 
